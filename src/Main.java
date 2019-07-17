@@ -8,7 +8,9 @@ public class Main {
         calc.performOperation(Calculator.MUL);
         calc.performOperation(10);
         calc.performOperation(Calculator.ADD);
-        calc.performOperation(8);
+        calc.performOperation(2);
+        calc.performOperation(Calculator.POW);
+        calc.performOperation(3);
         calc.performOperation(Calculator.DIV);
         calc.performOperation(2);
         calc.performOperation(Calculator.SUB);
@@ -16,5 +18,5 @@ public class Main {
         calc.performOperation(Calculator.EQU);
         System.out.println(calc.getResults());
     }
-//      10.5 + 5.2 * 10 + 8 / 2 - 7 =
+//      10.5 + 5.2 * 10 + 2 ^ 3 / 2 - 7 =
 }
