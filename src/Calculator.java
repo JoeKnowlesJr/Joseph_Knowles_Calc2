@@ -37,7 +37,7 @@ class Calculator implements Serializable {
                 double result = (operands.get(opIdx) / operands.get(opIdx + 1));
                 operands.remove(opIdx + 1);
                 operands.remove(opIdx);
-                operands.add(0, result);
+                operands.add(opIdx, result);
                 operators.remove(opIdx);
             } else {
                 opIdx = operators.indexOf(MUL);
@@ -45,7 +45,7 @@ class Calculator implements Serializable {
                     double result = (operands.get(opIdx) * operands.get(opIdx + 1));
                     operands.remove(opIdx + 1);
                     operands.remove(opIdx);
-                    operands.add(0, result);
+                    operands.add(opIdx, result);
                     operators.remove(opIdx);
                 } else {
                     opIdx = operators.indexOf(ADD);
@@ -53,7 +53,7 @@ class Calculator implements Serializable {
                         double result = (operands.get(opIdx) + operands.get(opIdx + 1));
                         operands.remove(opIdx + 1);
                         operands.remove(opIdx);
-                        operands.add(0, result);
+                        operands.add(opIdx, result);
                         operators.remove(opIdx);
                     } else {
                         opIdx = operators.indexOf(SUB);
@@ -61,7 +61,7 @@ class Calculator implements Serializable {
                             double result = (operands.get(opIdx) - operands.get(opIdx + 1));
                             operands.remove(opIdx + 1);
                             operands.remove(opIdx);
-                            operands.add(0, result);
+                            operands.add(opIdx, result);
                             operators.remove(opIdx);
                         } else {
                             opIdx = operators.indexOf(EQU);

@@ -11,7 +11,10 @@ public class Main {
         calc.performOperation(8);
         calc.performOperation(Calculator.DIV);
         calc.performOperation(2);
+        calc.performOperation(Calculator.SUB);
+        calc.performOperation(7);
         calc.performOperation(Calculator.EQU);
         System.out.println(calc.getResults());
     }
+//      10.5 + 5.2 * 10 + 8 / 2 - 7 =
 }
